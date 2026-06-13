@@ -1,13 +1,652 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>augment</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augment | Legal Intelligence Built for India</title>
+    <meta name="description" content="Search case law, analyze judgments, conduct due diligence, and manage litigation with AI grounded in trusted Indian legal sources.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="28" height="28" rx="7" fill="var(--deep-navy)"/>
+                    <path d="M14 5L22 10V18L14 23L6 18V10L14 5Z" fill="white" opacity="0.9"/>
+                    <path d="M14 9L19 12V16L14 19L9 16V12L14 9Z" fill="var(--royal-blue)"/>
+                </svg>
+                <span>Augment</span>
+            </div>
+            <div class="nav-links">
+                <div class="nav-item-dropdown">
+                    <span class="nav-dropdown-trigger">Products <svg width="11" height="11" viewBox="0 0 11 11" fill="none" style="vertical-align:middle"><path d="M2 3.5L5.5 7L9 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="nav-dropdown-menu">
+                        <a href="#" class="nav-dropdown-item">
+                            <div class="nav-dropdown-icon">🔍</div>
+                            <div><div class="nav-dropdown-title">Case Search</div><div class="nav-dropdown-desc">Semantic search across 2.5M+ Indian judgments</div></div>
+                        </a>
+                        <a href="#" class="nav-dropdown-item">
+                            <div class="nav-dropdown-icon">📋</div>
+                            <div><div class="nav-dropdown-title">Due Diligence</div><div class="nav-dropdown-desc">AI-powered document risk analysis</div></div>
+                        </a>
+                        <a href="#" class="nav-dropdown-item">
+                            <div class="nav-dropdown-icon">⚖️</div>
+                            <div><div class="nav-dropdown-title">Litigation Management</div><div class="nav-dropdown-desc">Track cases, hearings &amp; documents</div></div>
+                        </a>
+                        <a href="#" class="nav-dropdown-item">
+                            <div class="nav-dropdown-icon">✨</div>
+                            <div><div class="nav-dropdown-title">AI Legal Summary</div><div class="nav-dropdown-desc">Instant judgment summaries &amp; insights</div></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#solutions">Solutions</a>
+                <a href="#resources">Resources</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#" class="btn btn-outline">Log in</a>
+                <a href="#" class="btn btn-primary magnetic">Book Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="heroSection">
+            <div class="balatro-bg" id="balatroBg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="badge fade-up hero-badge">✦ New: AI Summarization 2.0</div>
+                <div class="hero-editorial fade-up">
+                    <h1 class="hero-brand-name">Augment</h1>
+                    <p class="hero-tagline">Legal Intelligence<br><em>Built for India.</em></p>
+                </div>
+                <p class="hero-subtitle fade-up">Search case law, analyze judgments, conduct due diligence, and manage litigation with AI grounded in trusted Indian legal sources.</p>
+                <div class="hero-ctas fade-up">
+                    <a href="#" class="btn btn-primary btn-large magnetic">Book Demo</a>
+                    <a href="#" class="btn btn-ghost btn-large magnetic">Explore Platform &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full-Width Dashboard Preview -->
+        <section class="dashboard-preview">
+            <div class="dashboard-preview-inner">
+                <div class="db-tilt-wrapper" id="dbPreviewWrapper">
+                    <div class="browser-mockup db-browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-address">augment.ai/research</div>
+                        </div>
+                        <div class="db-mockup-ui">
+                            <!-- Dark Sidebar -->
+                            <div class="db-sidebar">
+                                <div class="db-sidebar-logo">⚖️ Augment</div>
+                                <a class="db-nav-item active">📊 Dashboard</a>
+                                <a class="db-nav-item">🔍 Case Search</a>
+                                <a class="db-nav-item">✨ AI Summary</a>
+                                <a class="db-nav-item">⚖️ Litigation</a>
+                                <a class="db-nav-item">📋 Due Diligence</a>
+                                <a class="db-nav-item">📁 Matters</a>
+                                <a class="db-nav-item">💼 Billing</a>
+                            </div>
+                            <!-- Main Content -->
+                            <div class="db-main">
+                                <!-- Page Header -->
+                                <div class="db-page-header">
+                                    <div class="db-page-title">
+                                        <span class="db-page-icon">&#9737;</span>
+                                        <strong>AI Legal Research</strong>
+                                        <span class="db-page-meta">Indian Law &middot; Jun 13, 2026</span>
+                                    </div>
+                                    <div class="db-tab-bar">
+                                        <div class="db-tab active">Case Flow Search</div>
+                                        <div class="db-tab">AI Legal Summary</div>
+                                        <div class="db-tab">Litigation Analytics</div>
+                                        <div class="db-tab">Due Diligence</div>
+                                    </div>
+                                </div>
+                                <!-- Body -->
+                                <div class="db-body">
+                                    <div class="db-left">
+                                        <div class="db-search-row">
+                                            <span class="db-search-icon">🔍</span>
+                                            <span class="db-search-q">Can anticipatory bail be granted after FIR is filed in 498A cases?</span>
+                                            <span class="db-badge-amber">Researched in 1.2s</span>
+                                        </div>
+                                        <div class="db-confidence-row">
+                                            <span class="db-conf-dot"></span>
+                                            <strong>94 Confidence</strong>
+                                            <span class="db-conf-sep">&middot;</span>
+                                            <span>12 cases analyzed</span>
+                                            <span class="db-conf-sep">&middot;</span>
+                                            <span>3 statutes</span>
+                                        </div>
+                                        <div class="db-answer">
+                                            <h4>Short Answer</h4>
+                                            <p>Yes. Anticipatory bail under <a class="db-link">Section 438 CrPC</a> can be granted even after an FIR is filed, including in 498A cases, subject to the court's discretion on gravity and prima facie case.</p>
+                                            <div class="db-ratio-box">
+                                                <h5>Ratio Decidendi</h5>
+                                                <p>The Constitution Bench in <strong class="db-case-link">Sushila Aggarwal v. State (NCT) (2020)</strong> held that:</p>
+                                                <ol>
+                                                    <li>No blanket time limit on anticipatory bail &mdash; protection extends through trial</li>
+                                                    <li>Court considers gravity of offence + cooperation with investigation</li>
+                                                    <li>Custodial interrogation is not always required for serious offences</li>
+                                                </ol>
+                                            </div>
+                                            <div class="db-statute-tags">
+                                                <span>S.438 CrPC</span>
+                                                <span>S.439 CrPC</span>
+                                                <span>S.482 CrPC</span>
+                                                <span>Art. 21</span>
+                                            </div>
+                                            <div class="db-download-btn">&darr; Download PDF Memo</div>
+                                        </div>
+                                        <div class="db-auth-header-row">
+                                            <span>Relevant Authorities</span>
+                                            <span class="db-auth-count">6 Found</span>
+                                        </div>
+                                    </div>
+                                    <!-- Right Panel -->
+                                    <div class="db-right">
+                                        <div class="db-cited-header">CITED AUTHORITIES <span class="db-cited-count">4</span></div>
+                                        <div class="db-cited-item">
+                                            <div class="db-cited-num">[1]</div>
+                                            <div class="db-cited-body">
+                                                <div class="db-cited-case">Sushila Aggarwal v. State</div>
+                                                <div class="db-cited-ref">SC &middot; (2020) 5 SCC 1</div>
+                                                <div class="db-cited-quote">&ldquo;No blanket time limit on anticipatory bail protection.&rdquo;</div>
+                                                <span class="db-cited-tag good">&check; Good law</span>
+                                            </div>
+                                        </div>
+                                        <div class="db-cited-item">
+                                            <div class="db-cited-num">[2]</div>
+                                            <div class="db-cited-body">
+                                                <div class="db-cited-case">Gurbaksh Singh Sibbia v. State</div>
+                                                <div class="db-cited-ref">SC &middot; 1980 2 SCC 565</div>
+                                                <div class="db-cited-quote">&ldquo;Anticipatory bail &mdash; the bulwark framework.&rdquo;</div>
+                                                <span class="db-cited-tag good">&check; Good law</span>
+                                            </div>
+                                        </div>
+                                        <div class="db-cited-item">
+                                            <div class="db-cited-num">[3]</div>
+                                            <div class="db-cited-body">
+                                                <div class="db-cited-case">Arnesh Kumar v. Bihar</div>
+                                                <div class="db-cited-ref">SC &middot; (2014) 8 SCC 273</div>
+                                                <div class="db-cited-quote">&ldquo;Arrest under 498A not mandatory.&rdquo;</div>
+                                                <span class="db-cited-tag good">&check; Good law</span>
+                                            </div>
+                                        </div>
+                                        <div class="db-cited-item">
+                                            <div class="db-cited-num">[4]</div>
+                                            <div class="db-cited-body">
+                                                <div class="db-cited-case">Siddharam Mhetre v. State</div>
+                                                <div class="db-cited-ref">SC &middot; (2011) 1 SCC 694</div>
+                                                <div class="db-cited-quote">&ldquo;Reaffirmed Sibbia &mdash; No time bar.&rdquo;</div>
+                                                <span class="db-cited-tag good">&check; Good law</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bottom Nav -->
+                                <div class="db-bottom-nav">
+                                    <div class="db-bottom-item active">📊 Dashboard</div>
+                                    <div class="db-bottom-item">✨ Augment AI</div>
+                                    <div class="db-bottom-item">✈️ AI Draft</div>
+                                    <div class="db-bottom-item">📧 Email</div>
+                                    <div class="db-bottom-item">🔍 Research</div>
+                                    <div class="db-bottom-item">💼 Billing</div>
+                                    <div class="db-bottom-item">📋 Playbook</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust">
+            <p class="trust-label">Trusted by modern legal teams across India.</p>
+            <div class="logo-wall">
+                <div class="logo-track">
+                    <div class="trust-logo">Trilegal</div>
+                    <div class="trust-logo">Khaitan & Co</div>
+                    <div class="trust-logo">SAM & Co</div>
+                    <div class="trust-logo">AZB & Partners</div>
+                    <div class="trust-logo">L&L Partners</div>
+                    <div class="trust-logo">JSA</div>
+                    <div class="trust-logo">Trilegal</div>
+                    <div class="trust-logo">Khaitan & Co</div>
+                    <div class="trust-logo">SAM & Co</div>
+                    <div class="trust-logo">AZB & Partners</div>
+                    <div class="trust-logo">L&L Partners</div>
+                    <div class="trust-logo">JSA</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section id="products" class="showcase">
+            
+            <div class="showcase-header">
+                <h2>Your entire practice, one screen</h2>
+                <p>From foundational legal research to seamless client communication — watch how NyayaAI unites your workflow.</p>
+            </div>
+
+            <!-- Block 1 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="feature-eyebrow">Dashboard</div>
+                    <h3 class="feature-title">Intelligent Command Center</h3>
+                    <p class="feature-desc">Start your day with unparalleled clarity. NyayaAI's dashboard automatically surfaces your most urgent filings, prioritizes daily tasks, and organizes your upcoming docket before you even ask.</p>
+                    <div class="feature-pills">
+                        <span class="feature-pill">Priority Queue</span>
+                        <span class="feature-pill">Hearing Alerts</span>
+                        <span class="feature-pill">Task Automation</span>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-address">nyaya.ai/dashboard</div>
+                        </div>
+                        <div class="mockup-ui mockup-dashboard">
+                            <div class="mu-sidebar">
+                                <div class="mu-logo">⚖️ NyayaAI</div>
+                                <div class="mu-nav-item active">📊 Dashboard</div>
+                                <div class="mu-nav-item">📁 Matters</div>
+                                <div class="mu-nav-item">📅 Calendar</div>
+                                <div class="mu-nav-item">🔍 Research</div>
+                                <div class="mu-nav-item">📧 Comms</div>
+                                <div class="mu-nav-item">💼 Billing</div>
+                            </div>
+                            <div class="mu-main">
+                                <div class="mu-header">Good morning, Counsel</div>
+                                <div class="mu-subheader">Monday, 13 June 2026 · 3 actions need your attention</div>
+                                <div class="mu-grid">
+                                    <div class="mu-card mu-card--urgent">
+                                        <div class="mu-card-icon" style="background:#FEF2F2">📄</div>
+                                        <div class="mu-card-content">
+                                            <div class="mu-card-title">Draft Rejoinder</div>
+                                            <div class="mu-card-subtitle">Due Today · Sharma v. State</div>
+                                        </div>
+                                        <span class="mu-tag red" style="margin-left:auto;white-space:nowrap">Due Today</span>
+                                    </div>
+                                    <div class="mu-card">
+                                        <div class="mu-card-icon" style="background:#EFF6FF">🔍</div>
+                                        <div class="mu-card-content">
+                                            <div class="mu-card-title">Research Doctrine</div>
+                                            <div class="mu-card-subtitle">Anticipatory Bail under 498A</div>
+                                        </div>
+                                        <span class="mu-tag blue" style="margin-left:auto">In Queue</span>
+                                    </div>
+                                </div>
+                                <div class="mu-section-title">Priority Matters</div>
+                                <div class="mu-list">
+                                    <div class="mu-list-item">
+                                        <div class="mu-dot red"></div>
+                                        <div class="mu-item-text">
+                                            <strong>Sharma v. State of Maharashtra</strong>
+                                            <span>Hearing · Bombay High Court · Tomorrow, 10:30 AM</span>
+                                        </div>
+                                        <span class="mu-tag red">Urgent</span>
+                                    </div>
+                                    <div class="mu-list-item">
+                                        <div class="mu-dot yellow"></div>
+                                        <div class="mu-item-text">
+                                            <strong>TechCorp M&amp;A Due Diligence</strong>
+                                            <span>Review · Corporate · In 3 days</span>
+                                        </div>
+                                        <span class="mu-tag" style="background:#FEF3C7;color:#92400E">Review</span>
+                                    </div>
+                                    <div class="mu-list-item">
+                                        <div class="mu-dot green"></div>
+                                        <div class="mu-item-text">
+                                            <strong>Apex Retail Lease Advisory</strong>
+                                            <span>Drafting · Real Estate · In 7 days</span>
+                                        </div>
+                                        <span class="mu-tag green">On Track</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <div class="feature-eyebrow">AI Research</div>
+                    <h3 class="feature-title">Precision Legal Insights</h3>
+                    <p class="feature-desc">Bypass hours of manual scanning. Ask complex questions and instantly receive legally grounded answers. NyayaAI extracts the Ratio Decidendi and cites directly from trusted Indian authorities.</p>
+                    <div class="feature-pills">
+                        <span class="feature-pill">Semantic Search</span>
+                        <span class="feature-pill">Ratio Decidendi</span>
+                        <span class="feature-pill">Citation Graph</span>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-address">nyaya.ai/research</div>
+                        </div>
+                        <div class="mockup-ui mockup-research">
+                            <div class="mu-search-bar">
+                                <div class="mu-search-icon">🔍</div>
+                                <div class="mu-search-text">Is a non-compete clause without geographic limitation enforceable under Indian Law?</div>
+                                <div class="mu-badge-gold">Researched in 1.8s</div>
+                            </div>
+                            <div class="mu-research-results">
+                                <div class="mu-confidence">
+                                    <span class="mu-dot green" style="width:10px;height:10px;margin-right:6px"></span> <strong>92% Confidence</strong> &nbsp;·&nbsp; 18 cases analyzed &nbsp;·&nbsp; 5 statutes
+                                </div>
+                                <div class="mu-result-box">
+                                    <h4>Short Answer</h4>
+                                    <p>A non-compete clause without geographic limitation is generally unenforceable in India if it imposes an unreasonable restriction on trade, profession, or business, as it would be against public policy under <strong style="color:#1D4ED8">Section 27 of the Indian Contract Act, 1872</strong>.</p>
+                                    <div class="mu-reasoning">
+                                        <h4>Key Reasoning</h4>
+                                        <ul>
+                                            <li>Section 27 voids agreements that restrain lawful trade.</li>
+                                            <li>Courts require restrictions to be reasonable in scope, duration, and geography.</li>
+                                            <li>Overbroad clauses are typically read down or struck down.</li>
+                                        </ul>
+                                        <div class="mu-citation">
+                                            <strong>⚖️ Illustrative Case</strong><br>
+                                            <em>Superintendence Co. Pvt. Ltd. v. Krishan Murgai (1989) 2 SCC 409</em><br>
+                                            The Supreme Court held that restrictions must be reasonable and not injurious to public interest.
+                                        </div>
+                                    </div>
+                                    <div style="display:flex;gap:0.5rem;margin-top:0.5rem;flex-wrap:wrap">
+                                        <span style="background:#F3F4F6;color:#374151;padding:0.2rem 0.6rem;border-radius:4px;font-size:0.72rem;font-weight:500">S.27 · Contract Act, 1872</span>
+                                        <span style="background:#F3F4F6;color:#374151;padding:0.2rem 0.6rem;border-radius:4px;font-size:0.72rem;font-weight:500">S.14 · Specific Relief, 1963</span>
+                                        <span style="background:#F3F4F6;color:#374151;padding:0.2rem 0.6rem;border-radius:4px;font-size:0.72rem;font-weight:500">Art. 21 · Constitution</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="feature-eyebrow">Client Communication</div>
+                    <h3 class="feature-title">Seamless Client Updates</h3>
+                    <p class="feature-desc">Never let a client wonder about their case status. As your integrated calendar tracks deadlines, the AI copilot proactively drafts personalized, contextual email updates for your review.</p>
+                    <div class="feature-pills">
+                        <span class="feature-pill">AI Email Drafts</span>
+                        <span class="feature-pill">Smart Calendar</span>
+                        <span class="feature-pill">Auto-Reminders</span>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-address">nyaya.ai/communications</div>
+                        </div>
+                        <div class="mockup-ui mockup-comms">
+                            <div class="mu-split">
+                                <div class="mu-calendar-pane">
+                                    <div class="mu-cal-header">April 2026</div>
+                                    <div class="mu-cal-grid">
+                                        <span class="mu-cal-day">M</span><span class="mu-cal-day">T</span><span class="mu-cal-day">W</span><span class="mu-cal-day">T</span><span class="mu-cal-day">F</span>
+                                        <span>6</span><span>7</span><span>8</span><span class="mu-cal-active">9</span><span>10</span>
+                                        <span>13</span><span>14</span><span class="mu-cal-highlight">15</span><span>16</span><span>17</span>
+                                        <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+                                    </div>
+                                    <div class="mu-cal-events">
+                                        <div class="mu-cal-event">
+                                            <div class="mu-dot orange"></div>
+                                            <span>Apr 15 · SC Hearing — Court 1</span>
+                                        </div>
+                                        <div class="mu-cal-event">
+                                            <div class="mu-dot red"></div>
+                                            <span>Apr 22 · Vakalat filing</span>
+                                        </div>
+                                        <div class="mu-cal-event">
+                                            <div class="mu-dot yellow"></div>
+                                            <span>Apr 24 · M&amp;A Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mu-email-pane">
+                                    <div class="mu-ai-badge">✨ Nyaya AI Draft</div>
+                                    <div class="mu-email-headers">
+                                        <div><strong>To:</strong> sharma.rajesh@gmail.com</div>
+                                        <div><strong>Sub:</strong> Hearing — 15 April, Supreme Court</div>
+                                    </div>
+                                    <div class="mu-email-body">
+                                        <p>Dear Mr. Sharma,</p>
+                                        <p>Your case is listed on <strong>15 April 2026</strong> before the Supreme Court, Court No. 1.</p>
+                                        <p>Please arrange:</p>
+                                        <ol>
+                                            <li>Original ID proof</li>
+                                            <li>Signed affidavit</li>
+                                            <li>Previous court orders</li>
+                                        </ol>
+                                        <div class="mu-btn-send">Send Update ▶</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 4 -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <div class="feature-eyebrow">Matter Management</div>
+                    <h3 class="feature-title">Centralized Case Command</h3>
+                    <p class="feature-desc">A unified repository for your entire practice. Filter active litigation by urgency, jurisdiction, or status, ensuring seamless collaboration across your entire legal team.</p>
+                    <div class="feature-pills">
+                        <span class="feature-pill">CNR Auto-Sync</span>
+                        <span class="feature-pill">Status Tracking</span>
+                        <span class="feature-pill">Team Collaboration</span>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-address">nyaya.ai/matters</div>
+                        </div>
+                        <div class="mockup-ui mockup-matters">
+                            <div class="mu-table-header">
+                                <div><strong>Active Litigation</strong> &nbsp;<span style="color:#6B7280;font-weight:400">(145 matters)</span></div>
+                                <div style="display:flex;gap:0.5rem">
+                                    <div class="mu-filter-btn">Court ▾</div>
+                                    <div class="mu-filter-btn">Status ▾</div>
+                                </div>
+                            </div>
+                            <div class="mu-table">
+                                <div class="mu-tr mu-th">
+                                    <div class="mu-td">Matter Name</div>
+                                    <div class="mu-td">Court</div>
+                                    <div class="mu-td">Next Hearing</div>
+                                    <div class="mu-td">Status</div>
+                                </div>
+                                <div class="mu-tr">
+                                    <div class="mu-td">
+                                        <strong>Lexington v. Atlas Corp</strong><br>
+                                        <span>Commercial Dispute</span>
+                                    </div>
+                                    <div class="mu-td">Delhi HC</div>
+                                    <div class="mu-td" style="color:#374151">Apr 18, 2026</div>
+                                    <div class="mu-td"><span class="mu-tag blue">Discovery</span></div>
+                                </div>
+                                <div class="mu-tr" style="background:#FFFBEB">
+                                    <div class="mu-td">
+                                        <strong>State v. R. Kumar</strong><br>
+                                        <span>Criminal Bail</span>
+                                    </div>
+                                    <div class="mu-td">Sessions Court</div>
+                                    <div class="mu-td" style="color:#DC2626;font-weight:600">Tomorrow</div>
+                                    <div class="mu-td"><span class="mu-tag red">Urgent Hearing</span></div>
+                                </div>
+                                <div class="mu-tr">
+                                    <div class="mu-td">
+                                        <strong>Apex Retail Lease</strong><br>
+                                        <span>Real Estate Advisory</span>
+                                    </div>
+                                    <div class="mu-td">N/A</div>
+                                    <div class="mu-td" style="color:#374151">Apr 24, 2026</div>
+                                    <div class="mu-td"><span class="mu-tag green">Drafting</span></div>
+                                </div>
+                                <div class="mu-tr">
+                                    <div class="mu-td">
+                                        <strong>BN Press v. Rohit Vanjari</strong><br>
+                                        <span>IP / Media Dispute</span>
+                                    </div>
+                                    <div class="mu-td">Delhi HC</div>
+                                    <div class="mu-td" style="color:#374151">May 2, 2026</div>
+                                    <div class="mu-td"><span class="mu-tag" style="background:#F3E8FF;color:#6D28D9">Evidence</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Differentiator Section -->
+        <section class="differentiator">
+            <div class="diff-header">
+                <h2>The Evolution of Legal Research</h2>
+                <p>See why modern teams are upgrading their tech stack.</p>
+            </div>
+            <div class="diff-container">
+                <div class="diff-card traditional">
+                    <h3>Traditional Systems</h3>
+                    <ul>
+                        <li class="negative">Keyword-based exact match only</li>
+                        <li class="negative">Manual reading of full texts</li>
+                        <li class="negative">Disconnected documents</li>
+                        <li class="negative">High latency, clunky UI</li>
+                    </ul>
+                </div>
+                <div class="diff-card vs-badge">
+                    <span>VS</span>
+                </div>
+                <div class="diff-card ai-powered">
+                    <div class="glow-bg"></div>
+                    <h3>Augment Intelligence</h3>
+                    <ul>
+                        <li class="positive">Semantic concept mapping</li>
+                        <li class="positive">Instant AI summaries & extraction</li>
+                        <li class="positive">Dynamic citation networks</li>
+                        <li class="positive">Lightning-fast, premium experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Storytelling -->
+        <section class="storytelling">
+            <div class="story-content">
+                <h2>A Connected Legal Ecosystem</h2>
+                <p>Every case, act, and precedent linked dynamically to reveal the bigger picture.</p>
+            </div>
+            <canvas id="networkCanvas"></canvas>
+        </section>
+
+        <!-- Metrics -->
+        <section class="metrics">
+            <div class="metric-item">
+                <div class="metric-number" data-target="2.5">0</div>
+                <div class="metric-suffix">M+</div>
+                <div class="metric-label">Judgments Indexed</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-number" data-target="400">0</div>
+                <div class="metric-suffix">k+</div>
+                <div class="metric-label">AI Summaries Generated</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-number" data-target="75">0</div>
+                <div class="metric-suffix">%</div>
+                <div class="metric-label">Research Time Saved</div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="cta-background"></div>
+            <div class="cta-content">
+                <h2>The Future of Legal Research Starts Here.</h2>
+                <p>AI-powered legal intelligence built specifically for India.</p>
+                <a href="#" class="btn btn-primary btn-large magnetic">Request Early Access</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="var(--royal-blue)"/>
+                    </svg>
+                    <span>Augment</span>
+                </div>
+                <p>Elevating Indian legal practice with artificial intelligence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="#">Case Search</a>
+                <a href="#">AI Summaries</a>
+                <a href="#">Due Diligence</a>
+                <a href="#">Litigation Manager</a>
+            </div>
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <a href="#">For Law Firms</a>
+                <a href="#">For In-House Counsel</a>
+                <a href="#">For Courts</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">Documentation</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Augment Intelligence Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/balatro-bg.js"></script>
+    <script type="module">
+        import { initBalatroBg } from './js/balatro-bg.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('balatroBg');
+            if (container) initBalatroBg(container);
+        });
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
 </html>
